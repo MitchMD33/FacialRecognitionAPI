@@ -17,6 +17,7 @@ metadata.set("authorization", "Key " + PAT);
 
 
 
+
 stub.PostModelOutputs(
     {
         user_app_id: {
@@ -48,7 +49,7 @@ stub.PostModelOutputs(
         }
 
         const regions = response.outputs[0].data.regions;
-
+       
         regions.forEach(region => {
             // Accessing and rounding the bounding box values
             const boundingBox = region.region_info.bounding_box;
@@ -65,6 +66,7 @@ stub.PostModelOutputs(
 
             });
         });
+        
     }
 
 );
