@@ -1,8 +1,8 @@
 
 
+
+
 const handleApiCall = (req, res) => {
-
-
 const PAT = '657e4f1eae86452aa567d50247067239';
 const USER_ID = 'clarifai';
 const APP_ID = 'main';
@@ -66,12 +66,14 @@ stub.PostModelOutputs(
 
             });
         });
-        
+     res.json(response)
     }
-
+    
 );
 
 }
+
+
 
 const handleImage = (req, res, db) => {
   const { id } = req.body;
