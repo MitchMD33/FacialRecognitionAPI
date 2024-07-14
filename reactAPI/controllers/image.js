@@ -3,7 +3,7 @@
 
 
 const handleApiCall = (req, res) => {
-const PAT = '657e4f1eae86452aa567d50247067239';
+const PAT = process.env.API_KEY;
 const USER_ID = 'clarifai';
 const APP_ID = 'main';
 const MODEL_ID = 'face-detection';
